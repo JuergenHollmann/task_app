@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+/* Erstelle eine Funktion, die eine gegebene Zahl umdreht. Die Funktion soll einen Parameter vom Typ `int` entgegennehmen und einen `int` zurückgeben. Die Funktion soll die Zahl umdrehen und zurückgeben.
+
+Beispiel: 1234 → 4321
+
+**Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `reverseNumber` implementieren.*/
 
 int reverseNumber(int input) {
   // Lösung hier einfügen
