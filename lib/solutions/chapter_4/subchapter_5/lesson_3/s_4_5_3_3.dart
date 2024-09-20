@@ -1,5 +1,5 @@
-/*Center in Column",
-  Erstelle einen blauen `Container` mit den Abmessungen 150 x 150.
+/* Center in Column
+Erstelle einen blauen `Container` mit den Abmessungen 150 x 150.
 Integriere darin eine `Column` mit zwei `Text`-Elementen: `App` und `Akademie`.
 Zentriere beide Texte innerhalb des Containers. */
 
@@ -23,5 +23,3 @@ class S4533 extends StatelessWidget {
     );
   }
 }
-
-// zentriert NICHT die Schrift in den Container
