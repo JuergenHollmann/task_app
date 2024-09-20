@@ -9,18 +9,16 @@ class S4533 extends StatelessWidget {
   const S4533({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-        return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(height: 150, width: 150, color: Colors.blue),
-              const Text("App"),
-              const Text("Akademie"),
-            ],
-          ),
-        ),
+    return Container(
+      height: 150,
+      width: 150,
+      color: Colors.blue,
+      child: const Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text("App"),
+          Text("Akademie"),
+        ],
       ),
     );
   }
