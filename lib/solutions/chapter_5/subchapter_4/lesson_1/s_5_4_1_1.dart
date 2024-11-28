@@ -5,15 +5,14 @@ class S5411 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String kaeseBrot = "Käsebrot";
     return Column(
       children: [
         ElevatedButton(
           onPressed: () {
-// hier muss ABSICHTLICH ein FEHLER eingebaut werden:
-            if (kaeseBrot == "Käsebrot") {
-// try {
-
+            // hier muss ABSICHTLICH ein FEHLER eingebaut werden:
+            try {
+              throw Exception("intentionalExceptionError");
+            } catch (e) {
               ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                 backgroundColor: Colors.red,
                 duration: Duration(seconds: 20),
@@ -26,14 +25,6 @@ class S5411 extends StatelessWidget {
                   ),
                 ),
               ));
-
-// } catch (e) {
-
-              print("So wird richtig geschrieben: $kaeseBrot");
-
-// }
-            } else {
-              // nix passiert
             }
           },
           child: const Text(
