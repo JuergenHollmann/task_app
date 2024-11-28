@@ -27,7 +27,6 @@ class _MyNameWidgetState extends State<MyNameWidget> {
         ElevatedButton(
             onPressed: () {
               text1 = "Jürgen";
-              Text(text1);
               setState(() {});
             },
             child: const Text("Name anzeigen")),
